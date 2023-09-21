@@ -1,0 +1,29 @@
+@import url("/assets/css/fonts.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Vue-Tostification */
+@media only screen and (min-width: 600px) {
+
+    .Vue-Toastification__container.top-right .Vue-Toastification__toast--rtl,
+    .Vue-Toastification__container.bottom-right .Vue-Toastification__toast--rtl {
+        margin-right: unset !important;
+        margin-left: auto !important;
+        font-family: "iransans", Arial, Helvetica, sans-serif !important;
+    }
+}
+
+.Vue-Toastification__container .Vue-Toastification__toast--rtl {
+    font-family: "iransans", Arial, Helvetica, sans-serif !important;
+}
+
+@layer components{
+    .linearPink {
+        @apply bg-gradient-to-r from-[#B51F4F] to-[#FD2F70]
+    }
+    /* .linearPinkBorder {
+        @apply border-gradient-to-r from-[#FD2F70] from-100% via-white via-0%  to-[#FD2F70] to-100%;
+    } */
+}
